@@ -10,8 +10,8 @@ package:
 source:
   fn: VGAM_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/VGAM_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/VGAM/VGAM_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/VGAM_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/VGAM/VGAM_{{ version }}.tar.gz
   sha256: e581985f78ef8b866d0e810b2727061bb9c9bc177b2c9090aebb3a35ae87a964
 
 
