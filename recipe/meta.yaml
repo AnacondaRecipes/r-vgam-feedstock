@@ -1,4 +1,4 @@
-{% set version = '1.0-4' %}
+{% set version = '1.0-5' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,18 +12,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/VGAM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/VGAM/VGAM_{{ version }}.tar.gz
-  sha256: e581985f78ef8b866d0e810b2727061bb9c9bc177b2c9090aebb3a35ae87a964
-
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
+  sha256: 01acf530b011b8f04e1698742c51ea0682d7c9fcdf814fc65ba44869b6e76346
 
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -85,8 +79,8 @@ extra:
 # The original CRAN metadata for this package was:
 
 # Package: VGAM
-# Version: 1.0-4
-# Date: 2017-07-24
+# Version: 1.0-5
+# Date: 2018-02-07
 # Title: Vector Generalized Linear and Additive Models
 # Author: Thomas W. Yee <t.yee@auckland.ac.nz>
 # Maintainer: Thomas Yee <t.yee@auckland.ac.nz>
@@ -99,9 +93,9 @@ extra:
 # BuildVignettes: yes
 # LazyLoad: yes
 # LazyData: yes
-# Packaged: 2017-07-24 04:56:17 UTC; tyee001
+# Packaged: 2018-02-07 04:58:40 UTC; tyee001
 # Repository: CRAN
-# Date/Publication: 2017-07-25 21:01:44 UTC
+# Date/Publication: 2018-02-07 16:17:54 UTC
 
 # See
 # http://docs.continuum.io/conda/build.html for
